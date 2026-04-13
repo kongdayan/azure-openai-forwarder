@@ -1,0 +1,4 @@
+AZURE_UPSTREAM_HOST=https://your-tenant.azure-api.net
+AZURE_DEPLOYMENT=gpt-4o-mini
+AZURE_API_VERSION=2025-02-01-preview
+AZURE_API_KEY=replace-with-your-key

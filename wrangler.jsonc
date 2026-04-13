@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hkustaiforward",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-04-11",
+  "workers_dev": true,
+  // Bind a custom domain by adding a route, e.g.:
+  // "routes": ["your-subdomain.your-domain.com/*"]
+  "vars": {
+    "AZURE_UPSTREAM_HOST": "https://hkust.azure-api.net",
+    "AZURE_DEPLOYMENT": "gpt-5-mini",
+    "AZURE_API_VERSION": "2025-02-01-preview"
+  },
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    }
+  }
+}
