@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-BASE_URL="${1:-https://hkustaiforward.hunao.online}"
+BASE_URL="${1:-https://hkustaiforward.anserlabs.com}"
 
 curl -sS "${BASE_URL}/v1/chat/completions"   -H 'content-type: application/json'   -d '{
     "model": "gpt-5-mini",
